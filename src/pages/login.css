@@ -1,0 +1,7 @@
+.image {
+    width: 20%; /* Largeur de l'image */
+    height: 20%; /* Hauteur de l'image */
+    position:relative;
+    bottom: 30px;
+    
+  }

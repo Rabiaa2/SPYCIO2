@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+    --mainColor: #29335C;
+    --mainColorLight: #5767aa;
+    --secondaryCoLor:#DB2B39;
+    --textColor:#eee;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    padding: 0 2rem;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+}
+nav{
+    margin-bottom: 50px;
+}
+nav a {
+    margin: 0 2rem;
+    color:var(--textColor);
+    text-decoration: none;
+    margin-left: 100px;
+}
+nav a:hover{
+   
+    color:var(--secondaryCoLor);
+    
+}
+header .nav-btn{
+     padding: 5px;
+     cursor: pointer;
+     background: transparent;
+     border: none;
+     outline: none;
+     color: var(--textColor);
+     visibility: hidden;
+     opacity: 0;
+     font-size: 1.8rem;
+}
+@media only screen and (max-width:1024px) {
+    header .nav-btn{
+        visibility: visible;
+        opacity: 1;
+    }
+     header nav{
+        position: fixed;
+        margin-top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:1.5rem;
+        background-color: var(--mainColor);
+        transition: 1s;
+        transform: translateY(-100vh);
+     }
+     nav{
+        margin-bottom: -300px;
+    }
+     header .responsive_nav{
+        transform: none;
+     }
+   nav .nav-close-btn{
+    position: absolute;
+    margin-top: -40px;
+    right: 2rem;
+   }
+   nav a{
+    font-size: 1.5rem;
+   }
+  nav .image1{
+    width: 20%; /* Largeur de l'image */
+    height: 30%; /* Hauteur de l'image */
+   margin-bottom: 0px;
+    top: 0.3px;
+    
+
+}
+
+}
+.image1{
+    width: 10%; /* Largeur de l'image */
+    height: 10%; /* Hauteur de l'image */
+   margin-bottom: -50px;
+    top: 0.3px;
+    
+}
+h3{
+    color: rgb(25, 25, 26);
+}
+button{
+    background-color: #29335C; 
+    border-radius: 5px;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+}
+
+.rab{
+    margin-top: 40px;
+    margin-left: 50px;
+    
+}
